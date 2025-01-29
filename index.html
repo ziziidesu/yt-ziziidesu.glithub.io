@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTubeダウンロード＆マージ</title>
+</head>
+<body>
+  <div>
+    <h1>YouTube動画と音声のマージ</h1>
+    <label for="urlInput">YouTubeのURLを入力してください:</label>
+    <input type="text" id="urlInput" placeholder="https://www.youtube.com/watch?v=..." />
+    <button id="startButton">ダウンロードしてマージ</button>
+    <p id="status">準備中...</p>
+    <video id="outputVideo" controls style="display: none; width: 100%;"></video>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.1/dist/ffmpeg.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
